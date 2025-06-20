@@ -1,8 +1,8 @@
 /*
-id: 22011705
-name: amir
-group: g1
-lab: L3 (singly)
+id: 22011059
+name: noor zaheera
+group: g3
+lab: L3
 */
 
 #include <iostream>
@@ -69,7 +69,7 @@ public:
             cout << current->name << " -> ";
             current = current->next_ptr;
         }
-        cout << "nullptr" << endl;
+        cout << "NULL" << endl;
     }
 
     void delete_by_value(string val)
@@ -111,12 +111,12 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    cout << "Singly Linked List" << endl;
     // Create nodes dynamically
-    Node *node1 = new Node("Ali");
-    Node *node2 = new Node("Ahmed");
-    Node *node3 = new Node("Alee");
+    Node *node1 = new Node("Zaza");
+    Node *node2 = new Node("Zizi");
+    Node *node3 = new Node("Zuzu");
 
     // Create linked list and add nodes
     LinkedList linkedlst(node1);
@@ -127,8 +127,8 @@ int main()
     linkedlst.display_list();
 
     // Example of deletion
-    linkedlst.delete_by_value("Ahmed");
-    cout << "After deleting Ahmed: ";
+    linkedlst.delete_by_value("Zizi");
+    cout << "After deleting Zizi: ";
     linkedlst.display_list();
 
     // Clean up memory
